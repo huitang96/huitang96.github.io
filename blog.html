@@ -2,30 +2,52 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>技术博客</title>
+    <title>技术博客 | 信号处理 · UAV 安全 · 深度学习</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <div class="container">
 
-<nav>
-    <a href="index.html">首页</a>
-    <a href="projects.html">项目展示</a>
-    <a href="blog.html">技术博客</a>
-    <a href="about.html">关于我</a>
-</nav>
+    <nav>
+        <a href="index.html">首页</a>
+        <a href="projects.html">项目展示</a>
+        <a href="blog.html" class="active">技术博客</a>
+        <a href="about.html">关于我</a>
+    </nav>
 
-<h1>📘 技术博客</h1>
+    <header>
+        <h1>📘 技术博客</h1>
+        <p class="section-note">记录一些在无人机侦测、阵列信号处理和深度学习方面的思考与实践。</p>
+    </header>
 
-<h2>• 无人机威胁等级评估方法总结</h2>
-<p>基于通信链路特征、飞行行为、电磁特征等指标……</p>
+    <main class="blog-list">
+        <article class="blog-item">
+            <h2>无人机威胁等级评估方法总结</h2>
+            <p class="blog-meta">UAV Security · Threat Assessment</p>
+            <p>从通信链路特征、飞行行为模式、电磁辐射特征等多个维度，对无人机威胁等级进行量化建模，并对实际场景中的评估结果进行对比分析。</p>
+        </article>
 
-<h2>• 如何使用深度学习对信号进行特征提取</h2>
-<p>SimCLR、DeepCluster、潜在空间聚类的方法总结……</p>
+        <article class="blog-item">
+            <h2>如何使用深度学习对信号进行特征提取</h2>
+            <p class="blog-meta">Deep Learning · Representation Learning</p>
+            <p>结合 SimCLR、DeepCluster 等自监督/聚类方法，对无线电信号进行表征学习，讨论在小样本与弱标注场景下的优势和工程落地思路。</p>
+        </article>
 
-<h2>• DOA 定位算法：传统 & 深度学习路线</h2>
-<p>MUSIC / ESPRIT vs 深度学习协方差矩阵方法……</p>
+        <article class="blog-item">
+            <h2>DOA 定位算法：传统方法与深度学习路线</h2>
+            <p class="blog-meta">Array Signal Processing · DOA</p>
+            <p>对 MUSIC / ESPRIT 等经典 DOA 算法与基于深度学习的协方差矩阵建模方法进行对比，包括复杂场景中的准确率、鲁棒性与计算开销。</p>
+        </article>
+    </main>
+
+    <footer class="footer-note">
+        <span>后续可将这些主题拓展为完整博文，并链接到详细文章或论文。</span>
+        <span>More posts coming soon…</span>
+    </footer>
 
 </div>
 </body>
 </html>
+
+
